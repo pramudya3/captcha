@@ -378,15 +378,15 @@ func checkNumberFour(pixel []Pixel) bool {
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
 	px = pixel[71]
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
-	px = pixel[72]
+	px = pixel[78]
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
 	px = pixel[79]
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
-	px = pixel[80]
+	px = pixel[86]
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
 	px = pixel[87]
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
-	px = pixel[88]
+	px = pixel[94]
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
 	px = pixel[95]
 	numberTwo = append(numberTwo, px.R == 0, px.G == 0, px.B == 0)
