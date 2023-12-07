@@ -10,7 +10,7 @@ import (
 	"github.com/disintegration/gift"
 )
 
-func LoadImageThreshold(filename string) image.Image {
+func imageToThreshold(filename string) image.Image {
 	image.RegisterFormat("png", "png", png.Decode, png.DecodeConfig)
 	image.RegisterFormat("jpeg", "jpeg", jpeg.Decode, jpeg.DecodeConfig)
 
@@ -32,7 +32,7 @@ func LoadImageThreshold(filename string) image.Image {
 	return dst
 }
 
-func SaveImage(filename string, img image.Image) {
+func saveImage(filename string, img image.Image) {
 	f, err := os.Create(filename)
 	if err != nil {
 		log.Fatalf("os.Create failed: %v", err)
