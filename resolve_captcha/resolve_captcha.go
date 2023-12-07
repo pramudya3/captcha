@@ -5,13 +5,6 @@ import (
 	"log"
 )
 
-type Pixel struct {
-	R int
-	G int
-	B int
-	A int
-}
-
 func CaptchaResolver(filename string) string {
 	img := imageToThreshold(filename)
 	saveImage("captcha_grey.png", img)
@@ -65,6 +58,13 @@ func CaptchaResolver(filename string) string {
 	log.Println("captcha: ", txtCaptcha)
 
 	return txtCaptcha
+}
+
+type Pixel struct {
+	R int
+	G int
+	B int
+	A int
 }
 
 func rgbaToPixel(r, g, b, a uint32) Pixel {
